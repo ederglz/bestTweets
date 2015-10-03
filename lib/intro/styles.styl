@@ -8,6 +8,7 @@
     background-color transparent
     border none
     border-bottom 2px solid #7A7593
+    color #D44933
     display block
     font-size 20px
     outline none
@@ -22,3 +23,16 @@
       margin-top -125%
     &:focus
       box-shadow 0 4px 2px -2px #7A7593
+  &-error
+    background-color #D45742
+    font-size 1.5em
+    margin-top 1em
+    padding 1em
+    position relative
+    width 300px
+    margin 1em auto
+    transform rotateX(90deg)
+    transition 1s all ease
+    line-height initial
+    &.is-animated
+      transform rotateX(0deg)
