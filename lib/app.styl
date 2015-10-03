@@ -1,0 +1,44 @@
+@import 'nib'
+@import './intro/styles.styl'
+@import './layout/styles.styl'
+@import './footer/styles.styl'
+body
+  background-image url('../images/background.jpg')
+  background-position-x -20px
+  font-family 'Rokkitt'
+  font-size 16px
+  text-align center
+iframe
+  margin 0 auto
+.btn
+  border-radius 50px
+  color white
+  font-size 1.5em
+  cursor pointer
+  &--search
+    margin 2em auto
+    width 250px
+    height 70px
+    line-height 70px
+    border 4px solid #1ECD97
+    transition .5s all ease
+    position relative
+    &:hover
+      background-color #1ECD97
+    &.is-loading
+      background-color transparent
+      width 70px
+      &:after
+        content 'Loading'
+        font-size 19px
+        left 0
+        position absolute
+        text-align center
+        top 0
+        width 100%
+  &--footer
+    display inline-block
+    margin-right 32px
+@media (min-width: 789px)
+  .Intro-user
+    font-size 3rem
