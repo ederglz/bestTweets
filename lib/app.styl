@@ -2,6 +2,7 @@
 @import './intro/styles.styl'
 @import './layout/styles.styl'
 @import './aside/styles.styl'
+@import './tweets/styles.styl'
 body
   background-image url('../images/background.jpg')
   background-position-x -20px
@@ -17,13 +18,14 @@ iframe
   cursor pointer
   &--back
     border 4px solid #88D6E1
-    margin 6em 10px 16px
+    margin 6.5em auto 0
     text-align center
     transition .2s all ease-in-out
+    max-width: 297px;
     &:hover
       background-color #88D6E1
   &--search
-    margin -3em auto
+    margin -4em auto
     width 250px
     height 70px
     line-height 70px
